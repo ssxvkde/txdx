@@ -1,0 +1,452 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+img{
+	display: block;
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+h1,h2,h3,h4,h5,h6,strong,b{
+	font-weight: normal;
+}
+i,em{
+	font-style: normal;
+}
+
+/* 高度坍塌*/
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+}
+
+/****************** 1、头部 ******************/
+#m-header{
+	width: 100%;
+}
+.header-cont{
+	width: 1068px;
+	height: 78px;
+	margin: 0 auto;
+	/*background: red;*/
+	overflow: hidden;
+}
+
+.header-cont h1{
+	margin-top: 15px;
+	float: left;
+}
+
+.header-nav{
+	width: 690px;
+	height: 78px;
+	float: right;
+}
+.header-nav .nav{
+	float: left;
+}
+.header-nav .nav a{
+	height: 78px;
+	float: left;
+	background: url(../images/nav.png) no-repeat;
+}
+.header-nav .nav a:hover{
+	background: url(../images/nav-on.png) no-repeat;
+}
+
+.header-nav form{
+	float: right;
+	width: 144px;
+	height: 46px;
+	margin-top: 15px;
+	text-align: right;
+}
+.header-nav form span{
+	margin: 0 15px;
+	color: #a1968c;
+}
+.header-nav form a{
+	color: #a1968c;
+}
+.header-nav .search{
+	width: 135px;
+	height: 22px;
+	border: 1px solid #a1968c;
+	padding-right: 5px;
+	margin-top: 8px;
+}
+.header-nav .text1{
+	float: left;
+	width: 112px;
+	height: 21px;
+	border: 0;
+}
+.header-nav .bt1{
+	float: right;
+	width: 20px;
+	height: 21px;
+	background: url(../images/search.png) no-repeat;
+	border: 0;
+}
+
+
+
+
+/****************** 2、横幅 ******************/
+#banner{
+	width: 100%;
+	height: 357px;
+	background: url(../images/banner.png);
+}
+
+
+/****************** 3、公告 ******************/
+#bulletin{
+	width: 100%;
+	height: 38px;
+}
+.bulletin-cont{
+	width: 1068px;
+	height: 38px;
+	margin: 0 auto;
+	
+	position: relative;
+}
+
+.bulletin-cont img{
+	width: 50px;
+	height: 24px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	
+	/* 往左边: -宽度/2*/
+	margin-left: -25px;
+}
+.bulletin-cont p{
+	background: url(../images/bulletin2.png) no-repeat left center;
+	padding-left: 34px;
+	line-height: 38px;
+	margin-left: 20px;
+}
+
+
+/****************** 4、主体内容 ******************/
+#main{
+	width: 100%;
+	background: #d6dae2;
+	position: relative;
+}
+
+#main .erweima{
+	position: absolute;
+	top: 20px;
+	right: 58px;	
+}
+
+.main-cont{
+	width: 1068px;
+	height: 1610px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.content-main{
+	/*width: 782px;*/
+	float: left;
+}
+.content-main .mod-section{
+	margin-top: 20px;
+	padding: 0 20px;
+	width: 742px;
+	background: #f2f1ef;
+}
+.content-main .mod-section h2{
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	background: url(../images/main1.png) no-repeat left center;
+	padding-left: 30px;
+}
+.content-main .mod-section .more{
+	color: #888888;
+	font-size: 10px;
+	float: right;
+}
+.content-main .mod-section .desc .time{
+	color: #cbcbcb;
+	line-height: 20px;
+	background: url(../images/main4.png) no-repeat left center;
+	padding-left: 22px;
+}
+
+/* 课程*/
+.content-main .mod-section .curriculum li{
+	float: left;
+}
+
+.content-main .mod-section .curriculum li img{
+	width: 226px;
+	height: 162px;
+}
+.content-main .mod-section .curriculum .desc{
+	padding: 10px 10px 15px 10px;
+	width: 206px;
+	height: 80px;
+	background: white;
+	line-height: 22px;
+}
+.content-main .mod-section .curriculum .desc a{
+	color: black;
+}
+.content-main .mod-section .curriculum .desc p{
+	color: #bdbdbd;
+}
+
+/* 分享*/
+.content-main .mod-section .share li{
+	width: 722px;
+	height: 88px;
+	background: white url(../images/main5.png) no-repeat right top;
+	padding: 20px 0 20px 20px;
+	margin-bottom: 20px;
+}
+.content-main .mod-section .share .thumb{
+	float: left;
+}
+.content-main .mod-section .share .thumb img{
+	width: 86px;
+	height: 86px;
+}
+.content-main .mod-section .share .desc{
+	margin-left: 20px;
+	float: left;
+}
+.content-main .mod-section .share .desc a{
+	font-size: 17px;
+	color: black;
+	line-height: 24px;
+	font-weight: bold;
+}
+.content-main .mod-section .share .desc .info{
+	line-height: 24px;
+}
+/* 活动*/
+.content-main .mod-section .activity li{
+	width: 710px;
+	height: 180px;
+	border-bottom: 1px solid gray;
+	margin-bottom: 20px;
+}
+.content-main .mod-section .activity .thumb img{
+	width: 225px;
+	height: 159px;
+}
+.content-main .mod-section .activity .thumb{
+	float: left;
+}
+.content-main .mod-section .activity .desc{
+	float: left;
+	width: 464px;
+	margin-left: 20px;
+}
+.content-main .mod-section .activity .desc a{
+	font-size: 18px;
+	line-height: 28px;
+	color: black;	
+}
+.content-main .mod-section .activity .desc .info{
+	line-height:24px;
+	margin-top: 30px;
+}
+
+/* 侧边栏*/
+.content-side{
+	width: 266px;
+	float: right;
+	background: #fcfafb;
+	margin-top: 20px;
+}
+.content-side .mod-section{
+	padding: 0 20px;
+}
+/* 排行榜*/
+.content-side .mod-section h4{
+	padding-left: 40px;
+	background: url(../images/side1.png) no-repeat left center;
+	line-height: 60px;
+	font-size: 20px;
+}
+.content-side .mod-section .switch a{
+	height: 30px;
+	width: 108px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+}
+.content-side .mod-section .switch .tab1{
+	border: 1px solid #cccccc;
+	border-bottom: 0;
+	color: black;
+}
+.content-side .mod-section .switch .tab2{
+	border: 1px solid white;
+	border-bottom-color: #cccccc;
+	color: #cccccc;
+}
+.content-side .mod-section .top{
+	width: 226px;
+	height: 160px;
+	margin-top: 20px;
+	position: relative; 
+}
+.content-side .mod-section .top img{
+	width: 226px;
+	height:160px;
+}
+.content-side .mod-section .top p{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+}
+.content-side .mod-section .top em{
+	float: left;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	background: red;
+	color: white;
+}
+.content-side .mod-section .top span{
+	float: left;
+	color: white;
+}
+.content-side .mod-section .item{
+	margin-bottom: 10px;
+}
+.content-side .mod-section .item i{
+	width: 20px;
+	height:22px;
+	background: url(../images/side3.png);
+	float: left;
+	text-align: center;
+	line-height: 22px;
+	color: white;
+}
+.content-side .mod-section .item p{
+	margin-left: 10px;
+	float: left;
+}
+
+.content-side .section2{
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+.content-side .mod-section .img2{
+	margin-top: 15px;
+}
+.content-side .mod-section h5{
+	font-size: 18px;
+	line-height: 45px;
+}
+.content-side .mod-section .info2{
+	line-height:24px;
+	margin-bottom: 24px;
+}
+.content-side .mod-section .tel1,.content-side .mod-section .tel2{
+	line-height: 24px;
+}
+.content-side .mod-section .tel2{
+	margin-bottom: 222px;
+}
+
+
+/****************** 5、底部 ******************/
+#footer{
+	width: 100%;
+	position: relative;
+	background: #f6f6f6;
+}
+
+#footer .line{
+	width: 25%;
+	height: 3px;
+	position: absolute;
+	top: 0; 
+	display: block;
+}
+#footer .line1{
+	background: #1fc0ef;
+}
+#footer .line2{
+	background: #f6a544;
+	left: 25%;
+}
+#footer .line3{
+	background: #8cbe00;
+	left: 50%;
+}
+#footer .line4{
+	background: #ff6c00;
+	left: 75%;
+}
+
+#footer .links{
+	width: 1048px;
+	height: 280px;
+	margin: 0 auto;
+	padding-top: 36px;
+	padding-left: 20px;
+}
+
+#footer .links .links-main{
+	width: 782px;
+	float: left;
+}
+#footer .links h4{
+	height: 30px;
+}
+#footer .links .links-main .section1 a{
+	margin-right: 50px;
+	margin-bottom: 22px;
+	float: left;
+}
+#footer .links .links-main .section2 a{
+	margin-right: 30px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+#footer .links .links-side{
+	width: 120px;
+	height: 150px;
+	float: left;
+	margin-left: 35px;
+}
+#footer .links .links-side p{
+	height: 30px;
+}
+
+#footer .copyright{
+	width: 100%;
+	height: 70px;
+	padding-top: 30px;
+	text-align: center;
+	line-height: 26px;
+	background: #bababa;
+}
